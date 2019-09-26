@@ -12,6 +12,10 @@ public class Main {
 		empresa.init();
 		
 		empresa.insertarDep();
+		
+		empresa.insertarDep();
+		
+		empresa.insertarDep();
 
 		empresa.contarEmpresas();
 		
