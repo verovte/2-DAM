@@ -59,8 +59,6 @@ public class Empresas implements Serializable {
 
 		} catch (EOFException e) {
 
-			// ois.close();
-
 			fis.close();
 
 		}
@@ -79,7 +77,7 @@ public class Empresas implements Serializable {
 
 	public void contarEmpresas() {
 
-		System.out.println("Actualmente hay registrados " + empresas.size() + " departamentos");
+		System.out.println("Actualmente hay " + empresas.size() + " departamentos");
 
 	}
 
