@@ -49,8 +49,6 @@ public class Empresas implements Serializable {
 
 		} catch (FileNotFoundException e) {
 
-			System.out.println("Creando Archivo");
-
 			File archivo = new File("empresas.dat");
 
 			PrintWriter inicializador = new PrintWriter(new FileWriter(archivo));
@@ -95,7 +93,7 @@ public class Empresas implements Serializable {
 
 		BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in));
 
-		System.out.println("Inroduzca número de Departamento");
+		System.out.println("Inroduzca nÃºmero de Departamento");
 
 		n = Integer.parseInt(entrada.readLine());
 
@@ -111,7 +109,7 @@ public class Empresas implements Serializable {
 
 		empresas.put(n, dep);
 
-		System.out.println("Departamento registrado con éxito");
+		System.out.println("Departamento registrado con Ã©xito");
 
 		escribir();
 
@@ -133,7 +131,7 @@ public class Empresas implements Serializable {
 
 			valido = true;
 
-			System.out.println("Inroduzca número de Departamento a modificar");
+			System.out.println("Inroduzca nÃºmero de Departamento a modificar");
 
 			n = Integer.parseInt(entrada.readLine());
 
@@ -159,7 +157,7 @@ public class Empresas implements Serializable {
 
 		empresas.put(n, dep);
 
-		System.out.println("Departamento registrado con éxito");
+		System.out.println("Departamento registrado con Ã©xito");
 
 		escribir();
 
@@ -177,7 +175,7 @@ public class Empresas implements Serializable {
 
 			valido = true;
 
-			System.out.println("Inroduzca número de Departamento a borrar");
+			System.out.println("Inroduzca nÃºmero de Departamento a borrar");
 
 			n = Integer.parseInt(entrada.readLine());
 
@@ -193,7 +191,7 @@ public class Empresas implements Serializable {
 
 		empresas.remove(n);
 
-		System.out.println("Departamento eliminado con éxito");
+		System.out.println("Departamento eliminado con Ã©xito");
 
 		escribir();
 
